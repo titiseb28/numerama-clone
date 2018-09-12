@@ -1,3 +1,196 @@
+<<<<<<< HEAD
+/* ------------------ Fonts declaration -------------- */
+
+@font-face{
+    font-family:"futuraLT";
+    src : url("./font/futura-lt/FuturaLT.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"futuraLT-bold";
+    src : url("./font/futura-lt/FuturaLT-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----------------------- CSS content BEGIN ----------------------------------  */
+
+
+/* --------------- Global rules ------------------ */
+body {
+    font-family: 'futuraLT','Times New Roman', Times, serif;
+    background-color: #EEEEEE;  
+}
+#wrap-all{
+    width:1200px;
+}
+
+.main-container{
+    background-color: #EEEEEE;
+}
+
+img{
+    width: 100px;
+    height: 150px;
+}
+
+h1{
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif;
+    color:#e9573f;
+}
+
+h2{
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif;
+    color:#e9573f;
+}
+
+
+
+
+/* Règles bloc top , caché sur portable et tablette */
+
+
+
+/*  ----------------- Règles main bloc -------------------- */
+
+/* Rules Weekly brief : Hidden on phone & Tablet  */
+
+#weekly-brief{
+    display: inline-block;
+    font-family: 'futuraLT-bold','Times New Roman', Times, serif;
+    font-size: 0.9em;
+    margin-top: 25px;
+    width:250px;
+}
+
+#weekly-brief h2{
+    font-size:2em;
+    margin-top: 15px
+}
+
+#weekly-brief ol li{
+    margin-top:10px;
+}
+
+#adspace{
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Rules last-art */
+
+#last-art-container{
+    display: inline-block;
+    width:95%;
+    margin:0 auto;
+}
+
+.last-art{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#grid-icon{
+    border:none;
+    background-color: #FFF;
+    margin-left:15px;
+}
+#grid-icon-img{
+    height: 15px;
+    width: 15px;
+}
+.art-img{
+    width: 250px;
+}
+
+.art-infos h3{
+    margin-top: 15px;
+    font-size: 0.9em
+}
+
+
+@media screen and (max-width: 992px) {
+    .art-infos h3 {
+    font-size: 1.2em;
+    }
+    .last-art{
+        height:200px;
+        align-items: flex-start;
+    }
+    .art-img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.tag-last-art{
+    font-family: "futuraLT-bold", 'Times New Roman', Times, serif;
+    font-size:0.9em;
+    background-color: #EEEEEE; 
+    color: #FFF
+}
+
+.date{
+    font-size:0.8em;
+    margin-top : 5px
+}
+
+
+
+/* Rules categories */
+
+.right-icon{
+    width:10%;
+    height:5%
+}
+
+.more-art{
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif;
+    color: #e9573f;
+}
+
+
+.tech-art{
+    display: inline-block;
+    background-color: #EEEEEE;
+}
+
+
+.tag{
+    font-family: "futuraLT-bold", 'Times New Roman', Times, serif;
+    font-size:0.9em;
+    background: #e2e2e2;
+    margin-top:15px;
+    padding: 10px;
+    height:40px;
+}
+.tag span {
+    margin-left:50px;
+    background-color: #afafaf;
+    border-radius: 3px;
+    padding: 0px 25px;
+    color: #FFF;
+    transition-property: "background-color";
+}
+
+.tag span:hover{
+    background-color:#e9573f;
+}
+
+.pol-art{
+    display: inline-block;
+    background-color: #EEEEEE;
+}
+
+.title-container{
+    padding-top:50px;
+}
+/* ----------------------- CSS Content END ----------------------------------  */
+
+=======
 /* TopBar start */
 
 .red-c {
@@ -39,3 +232,4 @@
 
 
 /* Topbar end */
+>>>>>>> 32a02083efc15e5016f7ba1a08ff0ded588dc3af
