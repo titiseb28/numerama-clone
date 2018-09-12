@@ -4,8 +4,7 @@
     <title>Accueil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="footer.css">
   </head>
@@ -16,58 +15,102 @@
     </header> 
 
 
-
+<!-------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <footer >
-      <div id="top-footer">
-        <div id="top-footer-left">
-          <img id="logoNumerama" src="#" alt="logo Numerama">
-          <h2>numerama</h2>
-        </div>
-        <div id="top-footer-right">
-          <a href="#">TECH</a>
-          <a href="#">POLITIQUE</a>
-          <a href="#">POP CULTURE</a>
-          <a href="#">BUSINESS</a>
-          <a href="#">SCIENCES</a>
-          <a href="#">STARTUP</a>
-          <a href="#">A PROPOS</a>
-          <a href="#">CONTACT</a>          
-        </div>
-      </div>
-      <div id="bottom-footer">          
-        <div id="bottom-footer-left">
-          <div id="bottom-footer-left-line1">
-            <p>NOUS SUIVRE SUR LES RÉSEAUX</p> 
-          </div>
-          <div id="bottom-footer-left-line2">            
-            <i class="fa fa-facebook-f" style="font-size:24px"></i>                  
-            <i class="fa fa-twitter" style="font-size:24px"></i>
-            <i class="fa fa-google" style="font-size:24px"></i>
-            <i class="fa fa-youtube" style="font-size:24px"></i>
-            <i class="fa fa-rss" style="font-size:24px"></i>                       
-          </div>
-          <div id="bottom-footer-left-line3">
-            <p>Les travaux des hommes de génie, même poursuivis dans de fausses directions,
-            ne manquent presque jamais de se révéler, en fin de compte, nettement bénéfique
-            au genre humain.<strong> Mary Shelley</strong></p>
-          </div>       
-          <div id="bottom-footer-right">
-            <div id="bottom-right-line1"> 
-              <h1>Humanoid</h1>
+
+      <!--ligne du haut du footer -->
+      <div id="top-footer" class="container-fluid">
+        <div id="top-footer" class="container">
+          <div class="row justify-content-md-center">
+
+            <!-- partie de gauche du top-footer -->
+            <div id="top-footer-left" class=" col-lg-2 pr-5 mr-2">
+              <img id="logo-numerama" style="margin-left: 0px" src="img/logo-numerama.png" alt="logo Numerama">
             </div>
-            <div id="bottom-right-line2">
-              <a href="#">Mon profil</a>
-              <a href="#">Mentions Légales</a>
-              <a href="#">Préférences publicitaires</a>
-            </div> 
-          </div>           
+            
+            <!-- partie de droite du top-footer --><!-- disparait en dessous de lg -->
+            <div id="top-footer-right" class="offset-1 col-9 text-right ">
+              <a href="#" class="mr-3 text-white">TECH</a>
+              <a href="#" class="mr-3 text-white" >POLITIQUE</a>
+              <a href="#" class="mr-3 text-white">POP CULTURE</a>
+              <a href="#" class="mr-3 text-white">BUSINESS</a>
+              <a href="#" class="mr-3 text-white" >SCIENCES</a>
+              <a href="#" class="mr-3 text-white" >STARTUP</a>
+              <a href="#" class="mr-3 text-white">|</a>
+              <a href="#" class="mr-3 text-white">A PROPOS</a>
+              <a href="#" class="text-white">CONTACT</a>          
+            </div>
+
+            <!-- nouvelle partie du top-footer--><!--apparait en dessous de lg-->          
+            <div id="top-footer-left-line2-bis" class="d-lg-none mt-5 mr-0 col-12 d-flex justify-content-start"> 
+              <i class="fa fa-facebook-f mr-3" style="font-size:24px;color:white;padding-right:18%"></i>                  
+              <i class="fa fa-twitter mr-3" style="font-size:24px;color:white;padding-right:18%" ></i>
+              <i class="fa fa-google mr-3" style="font-size:24px;color:white;padding-right:18%" ></i>
+              <i class="fa fa-youtube mr-3" style="font-size:24px;color:white;padding-right:18%" ></i>
+              <i class="fa fa-rss" style="font-size:24px;color:white"></i>                       
+            </div>           
+          </div>
         </div>
       </div>
+
+      <!-------------------------------------------------------------------------->
+
+      <!--ligne du bas du footer --><!-- disparait en dessous de lg -->
+      <div id="bottom-footer" class="container-fluid mt-4 d-none d-lg-block"> 
+        <div id="bottom-footer" class="container">  
+        <div class="row"> 
+          
+          <!-- partie de gauche du bottom-footer -->
+          <div id="bottom-footer-left" class="col-4 ml-5" >
+            <div id="bottom-footer-left-line1" class="  ">
+              <p class="text-muted  ">NOUS SUIVRE SUR LES RÉSEAUX</p> 
+            </div>
+            <div id="bottom-footer-left-line2"  ">            
+              <i class="fa fa-facebook-f mr-3" style="font-size:24px"></i>                  
+              <i class="fa fa-twitter mr-3" style="font-size:24px"></i>
+              <i class="fa fa-google mr-3" style="font-size:24px"></i>
+              <i class="fa fa-youtube mr-3" style="font-size:24px"></i>
+              <i class="fa fa-rss" style="font-size:24px"></i>                       
+            </div>
+            <div id="bottom-footer-left-line3">
+              <p class="font-italic text-muted mt-3" >"Les travaux des hommes de génie, même poursuivis dans de fausses directions,
+              ne manquent presque jamais de se révéler, en fin de compte, nettement bénéfique
+              au genre humain."<strong class="text-danger"> &#151; Mary Shelley</strong></p>
+            </div> 
+          </div>  
+          
+          <!-- partie de droite du bottom-footer -->
+          <div id="bottom-footer-right" class=" col-7">
+            <div id="bottom-right-line1"> 
+              <h1 class="font-weight-bold text-right">Humanoid</h1>
+            </div>
+            <div id="bottom-right-line2" class="text-right mr-1">
+              <a href="#" class="text-muted mr-2"><small>Mon profil</small></a>
+              <a href="#" class="text-muted mr-2 "><small>Mentions Légales</small></a>
+              <a href="#" class="text-muted "><small>Préférences publicitaires</small></a>
+            </div>
+          </div>                     
+        </div> 
+      </div>          
+     
+      
+      <!--nouveau bottom-footer--><!-- apparait en dessous de lg -->
+      </div> <div id="bottom-footer-bis" class="container-fluid d-lg-none pr-3 "> 
+        <div class="row" > 
+          <div id="top-footer-right-bis" class="offset-1 col-12 mt-2 " >
+            <a href="#" class="mr-3 text-white" style="font-size:1.8em;padding-right:7%">Humanoid</a>
+            <a href="#" class="mr-3 text-white" style="padding-right:7%" >PRÉFÉRENCES</a>
+            <a href="#" class="mr-3 text-white" style="padding-right:7%">À PROPOS</a>
+            <a href="#" class="mr-3 text-white" style="padding-right:7%">CONTACT</a>                 
+          </div>  
+        </div>             
+      </div>
+      
+     
 
 
 
     </footer>
-
   </body>
 </html>
