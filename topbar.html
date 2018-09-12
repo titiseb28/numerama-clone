@@ -4,50 +4,83 @@
     <meta charset="utf-8">
     <title>Numerama clone topbar</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
                               <!----------------- topbar Start -------------->
 
-      <div>
-        <div>
-          logo Numerama
-          <!-- Menu deroulant logo -->
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Flipboard</a></li>
-            <li><a href="#">Youtube</a></li>
-            <li><a href="#">RSS</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">FrAndroid</a></li>
-            <li><a href="#">Humanoid</a></li>
-          </ul>
-        </div>
-        <div>
-          <!-- Menu section -->
-          <ul>
-            <li><a href="#">TECH</a></li>
-            <li><a href="#">POLITIQUE</a></li>
-            <li><a href="#">POP CULTURE</a></li>
-            <li><a href="#">BUSINESS</a></li>
-            <li><a href="#">SCIENCES</a></li>
-            <li><a href="#">GUIDES</a></li>
-            <li><a href="#">PC</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <!-- MENUE DE DOITE -->
-            <li><a href="#">DISCUSSIONS</a></li>
-            <li><a href="#">COMPTE</a></li>
-            <li><a href="#">RECHERCHE</a></li>
-          </ul>
+      <div class="container-fluid red-c ">
+        <div class="row row-topbar">
+          <div class="red-c col-lg-3 col-md-1">
+            <img id="logo-p" class="d-lg-none d-md-block float-none" src="img/logo-numerama-petit.png" alt="">
+            <!-- menue deroulant logo -->
+              <div class="dropdown text-right dropdown d-none d-lg-block">
+                <a href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="logo"  src="img/logo-numerama.png" alt="Numerama"/><i class="fa fa-chevron-down text-white" aria-hidden="true"></i></a>
+                <div class="dropdown-menu bg-secondary">
+                  <div class="dropdown-item ">
+                    <a href="#" class="fa fa-facebook-square  text-white"></a>
+                    <a href="#" class="fa fa-twitter-square text-white"></a>
+                    <a href="#" class=" text-white">flipboard</a>
+                    <a href="#" class="fa fa-youtube-square text-white"></a>
+                    <a href="#" class="fa fa-rss-square text-white"></a>
+                  </div>
+                    <a href="#" class="dropdown-item text-white " >FrAndroid</a>
+                    <a href="#" class="dropdown-item text-white">Humanoid</a>
+                </div>
+            </div>
+          </div>
+          <!-- menue section  lg mode-->
+          <div class="col-lg-6 d-md-none d-lg-block">
+
+            <nav class="nav justify-content-center red-f row-topbar ">
+              <a href="#" class="nav-link text-white font-size">TECH</a>
+              <a href="#" class="nav-link text-white font-size">POLITIQUE</a>
+              <a href="#" class="nav-link text-white font-size">POP CULTURE</a>
+              <a href="#" class="nav-link text-white font-size">BUSINESS</a>
+              <a href="#" class="nav-link text-white font-size">SCIENCES</a>
+              <a href="#" class="nav-link text-white font-size">GUIDES</a>
+              <a href="#" class="nav-link text-white font-size">PC</a>
+            </nav>
+          </div>
+          <!-- menue section  md mode-->
+          <div class="red-f d-lg-none d-md-block col-md-10">
+            <!-- menue deroulant logo -->
+              <div class="dropdown text-left dropdown d-lg-none d-md-block">
+                <a href="#" class="text-white"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tech</a>
+                <div class="dropdown-menu bg-white  bg-opacity">
+                  <div class="dropdown-item ">
+                    <a href="#" class="nav-link text-danger font-size font-weight-bold">| TECH</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| POLITIQUE</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| POP CULTURE</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| BUSINESS</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| SCIENCES</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| GUIDES</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| PC</a>
+                    <a href="#" class="dropdown-item fa fa-search bg-dark text-white">   Recherche</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-1 ">
+            <!-- MENUE DE GAUCHE -->
+            <nav class="nav red-c ">
+              <a href="#" id="dis" class="nav-link text-white d-none d-lg-block">DISCUSSIONS</a>
+              <a href="#"><span class="fa fa-user-circle text-white col-lg-1 "></span></a>
+              <a href="#"><span class="fa fa-search text-white d-none d-lg-block"></span></a>
+            </nav>
+          </div>
+
         </div>
       </div>
 
 
+
+
                             <!----------------- topbar end ----------------->
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
 </html>
