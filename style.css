@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* ------------------ Fonts declaration -------------- */
 
 @font-face{
@@ -189,47 +189,3 @@ h2{
     padding-top:50px;
 }
 /* ----------------------- CSS Content END ----------------------------------  */
-
-=======
-/* TopBar start */
-
-.red-c {
-  background-color: #e9573f;
-}
-
-.red-f {
-  background-color: #E03134;
-}
-
-#logo {
-  width: 50%;
-
-}
-
-.font-size {
-  font-size: 0.7em;
-
-}
-
-.row-topbar {
-  height: 100%;
-
-}
-
-#dis {
-  font-size: 0.8em;
-}
-
-#logo-p {
-  width: 50%;
-}
-
-.bg-opacity {
-  opacity: 0.8;
-}
-
-
-
-
-/* Topbar end */
->>>>>>> 32a02083efc15e5016f7ba1a08ff0ded588dc3af
