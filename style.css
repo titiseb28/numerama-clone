@@ -21,7 +21,7 @@
 /* --------------- Global rules ------------------ */
 body {
     font-family: 'futuraLT','Times New Roman', Times, serif;
-    background-color: #EEEEEE;  
+    background-color: #EEEEEE;
 }
 #wrap-all{
     width:1200px;
@@ -129,7 +129,7 @@ h2{
 .tag-last-art{
     font-family: "futuraLT-bold", 'Times New Roman', Times, serif;
     font-size:0.9em;
-    background-color: #EEEEEE; 
+    background-color: #EEEEEE;
     color: #FFF
 }
 
