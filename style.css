@@ -46,6 +46,15 @@ h2{
     color:#e9573f;
 }
 
+a{
+    color:black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
 
 
 
@@ -57,11 +66,14 @@ h2{
 
 /* Rules Weekly brief : Hidden on phone & Tablet  */
 
+.main-content{
+    padding-top:25px;
+}
+
 #weekly-brief{
     display: inline-block;
     font-family: 'futuraLT-bold','Times New Roman', Times, serif;
     font-size: 0.9em;
-    margin-top: 25px;
     width:250px;
 }
 
@@ -72,10 +84,11 @@ h2{
 
 #weekly-brief ol li{
     margin-top:10px;
+    font-size: 1.5em;
 }
 
 #adspace{
-    height: 300px;
+    height: 400px;
     width: 100%;
     margin: 0 auto;
 }
@@ -93,26 +106,39 @@ h2{
     padding-top: 20px;
 }
 
-#grid-icon{
+#grid-icon, #list-icon{
     border:none;
     background-color: #FFF;
     margin-left:15px;
 }
-#grid-icon-img{
+#grid-icon-img, #list-icon-img{
     height: 15px;
     width: 15px;
 }
-.art-img{
-    width: 250px;
+#list-icon-img{
+    height: 20px;
+    width: 20px;
 }
+.art-img{
+    width: 100%;
+    height: 250px;
+    z-index: 100;
+}
+
+
+
 
 .art-infos h3{
     margin-top: 15px;
-    font-size: 0.9em
+    font-size: 1.2em
 }
 
 
 @media screen and (max-width: 992px) {
+
+    .last-art{
+        margin-top:50px
+    }
     .art-infos h3 {
     font-size: 1.2em;
     }
@@ -121,7 +147,7 @@ h2{
         align-items: flex-start;
     }
     .art-img{
-        width: 100px;
+        width: 100%;
         height: 100px;
     }
 }
@@ -130,8 +156,15 @@ h2{
     font-family: "futuraLT-bold", 'Times New Roman', Times, serif;
     font-size:0.9em;
     background-color: #EEEEEE;
-    color: #FFF
+    color: #FFF;
+    transition: all;
 }
+
+.tag-last-art:hover{
+    background-color: #e9573f;
+}
+
+
 
 .date{
     font-size:0.8em;
@@ -150,15 +183,21 @@ h2{
 .more-art{
     font-family: "futuraLT-bold",'Times New Roman', Times, serif;
     color: #e9573f;
+    padding-top:100px;
 }
 
 
 .tech-art{
     display: inline-block;
-    background-color: #EEEEEE;
 }
 
+.tech-art img{
+    background-color: #FFF;
+}
 
+h5{
+    font-size: 1.1em;
+}
 .tag{
     font-family: "futuraLT-bold", 'Times New Roman', Times, serif;
     font-size:0.9em;
@@ -182,10 +221,97 @@ h2{
 
 .pol-art{
     display: inline-block;
-    background-color: #EEEEEE;
 }
 
 .title-container{
     padding-top:50px;
 }
+/* -------------------- CSS FORM ---------------------- */
+
+.contact-title{
+    font-size: 6em;
+}
+
+label {
+    color:#e9573f;
+    font-size:1.2em;
+}
+
+.input-field{
+    margin-bottom: 25px;
+}
+
+.line-input{
+    height : 25px;
+    width:50%;
+    border-bottom: 1px solid #e9573f;
+    background-color: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    transition: all 0.5s;
+}
+
+.line-input:focus{
+    height: 50px;
+    outline:none;
+}
+
+#submit-button-container input{
+    border: none;
+    background-color: #e9573f;
+    color: #FFF;
+}
+
+#infolink{
+    text-decoration: none;
+    color: #e9573f
+}
+
+/* --------------------- CSS PC ----------------  */
+
+#top-img{
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.noresize{
+    min-width: 100%;
+    min-height: 800px;
+}
+
+.pc-main-wrap{
+    padding-top: 800px;
+}
+
+/* ------- Left block ---------- */
+#ytVid{
+    width: 100%;
+}
+
+.custom-gray{
+    color:#444444;
+}
+
+.centered-title{
+    text-align: center;
+    font-size: 1em;
+    font-style: italic
+}
+
+.img-pc-selling{
+    min-height: 300px;
+    margin-bottom: 25px;
+
+}
+
+.black{
+    color:black;
+}
+
+
+/*  ----- right block --------- */
+
+
+
+
 /* ----------------------- CSS Content END ----------------------------------  */
