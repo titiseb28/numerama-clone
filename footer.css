@@ -21,8 +21,7 @@
     font-size: 0.9em;
 }
 
-#bottom-footer p{
-    
+#bottom-footer p{    
     font-size: 0.8em;
 }
 
@@ -37,22 +36,21 @@
     font-size: 1.0em;    
 }
 
-#top-footer-right-bis{
-   
-   
+#bottom-footer-ter{
+    height:115px;
+    width: 100%;
+    background-color: #d34e39;
+    font-size: 1.0em;    
 }
+
    
 
 
 /* media queries */
 
 @media screen and (max-width: 992px){ 
-
   #top-footer{
-  height:150px;}
-  
-
-    
+  height:150px;}    
 }    
 
 
