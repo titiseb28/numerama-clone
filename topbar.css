@@ -8,7 +8,7 @@
   background-color: #E03134;
 }
 
-#logo {
+.logo {
   width: 50%;
 
 }
@@ -27,10 +27,35 @@
   font-size: 0.8em;
 }
 
-#logo-p {
-  width: 50%;
+.color-menue {
+  background-color: #464646;
 }
 
+#frandroid:hover {
+  background-color: green;
+}
 
+#humanoid:hover {
+  background-color: blue;
+}
 
+#facebook:hover {
+  background-color: #3b5998;
+}
+
+#twitter:hover {
+  background-color: #0894F5;
+}
+
+#flipboard:hover {
+  background-color: #E03134;
+}
+
+#youtube:hover {
+  background-color: #E03134;
+}
+
+#rss:hover {
+  background-color: #FF972B;
+}
 /* Topbar end */

@@ -5,29 +5,29 @@
     <title>Numerama clone topbar</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="topbar.css">
 
   </head>
   <body>
-                              <!----------------- topbar Start -------------->
+                              <!-- topbar Start -->
 
       <div class="container-fluid red-c ">
         <div class="row row-topbar">
           <div class="red-c col-lg-3 col-md-1">
-            <img id="logo-p" class="d-lg-none d-md-block float-none" src="img/logo-numerama-petit.png" alt="">
+            <img class="logo d-lg-none d-md-block float-none" src="img/logo-numerama-petit.png" alt="">
             <!-- menue deroulant logo -->
               <div class="dropdown text-right dropdown d-none d-lg-block">
-                <a href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="logo"  src="img/logo-numerama.png" alt="Numerama"/><i class="fa fa-chevron-down text-white" aria-hidden="true"></i></a>
-                <div class="dropdown-menu bg-secondary">
-                  <div class="dropdown-item ">
-                    <a href="#" class="fa fa-facebook-square  text-white"></a>
-                    <a href="#" class="fa fa-twitter-square text-white"></a>
-                    <a href="#" class=" text-white">flipboard</a>
-                    <a href="#" class="fa fa-youtube-square text-white"></a>
-                    <a href="#" class="fa fa-rss-square text-white"></a>
+                <a href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logo"  src="img/logo-numerama.png" alt="Numerama"/><i class="fa fa-chevron-down text-white" aria-hidden="true"></i></a>
+                <div class="dropdown-menu color-menue">
+                  <div class="">
+                    <a href="#" id="facebook" class="btn btn-list-inline-item fa fa-facebook-square text-white" role="button">   </a>
+                    <a href="#" id="twitter" class="btn btn-list-inline-item fa fa-twitter-square text-white" role="button">    </a>
+                    <a href="#" id="flipboard" class="btn btn-list-inline-item  text-white  " role="button"><img  src="img/flipboard.png" alt="">    </a>
+                    <a href="#" id="youtube" class="btn btn-list-inline-item fa fa-youtube-square text-white" role="button">     </a>
+                    <a href="#" id="rss" class="btn btn-list-inline-item fa fa-rss-square text-white" role="button">    </a>
                   </div>
-                    <a href="#" class="dropdown-item text-white " >FrAndroid</a>
-                    <a href="#" class="dropdown-item text-white">Humanoid</a>
+                    <a href="#" id="frandroid" class="dropdown-item text-white" ><img src="img/frandroid-logo.png" alt="">     FrAndroid</a>
+                    <a href="#" id="humanoid"  class="dropdown-item text-white"><img src="img/humanoid-logo.png" alt="">   Humanoid</a>
                 </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
 
 
 
-                            <!----------------- topbar end ----------------->
+                            <!-- topbar end -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
