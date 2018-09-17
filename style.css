@@ -15,6 +15,69 @@
     font-style: normal;
 }
 
+/* TopBar start */
+
+.red-c {
+    background-color: #e9573f;
+  }
+  
+  .red-f {
+    background-color: #E03134;
+  }
+  
+  .logo {
+    width: 50%;
+  
+  }
+  
+  .font-size {
+    font-size: 0.7em;
+  
+  }
+  
+  .row-topbar {
+    height: 100%;
+  
+  }
+  
+  #dis {
+    font-size: 0.8em;
+  }
+  
+  .color-menue {
+    background-color: #464646;
+  }
+  
+  #frandroid:hover {
+    background-color: green;
+  }
+  
+  #humanoid:hover {
+    background-color: blue;
+  }
+  
+  #facebook:hover {
+    background-color: #3b5998;
+  }
+  
+  #twitter:hover {
+    background-color: #0894F5;
+  }
+  
+  #flipboard:hover {
+    background-color: #E03134;
+  }
+  
+  #youtube:hover {
+    background-color: #E03134;
+  }
+  
+  #rss:hover {
+    background-color: #FF972B;
+  }
+  /* Topbar end */
+  
+
 /* ----------------------- CSS content BEGIN ----------------------------------  */
 
 
@@ -25,6 +88,8 @@ body {
 }
 #wrap-all{
     width:1200px;
+    margin-top: 25px;
+    margin-bottom: 25px; 
 }
 
 .main-container{
@@ -34,6 +99,10 @@ body {
 img{
     width: 100px;
     height: 150px;
+}
+
+p{
+    font-family: "futuraLT", 'Times New Roman', Times, serif 
 }
 
 h1{
@@ -56,11 +125,116 @@ a:hover{
 }
 
 
+/* Règles bloc top , caché sur portable et tablette */w
 
+#main-new-top-left-container{
+    height:770px;
+}
 
-/* Règles bloc top , caché sur portable et tablette */
+#main-new-1{
+    min-width: 100%;
+}
+#img-main-new-1{
+    width: 319px;
+    height:450px;
+}
 
+#title-main-new-1{
+    color : #e9573f;
+    width:750px;
+    text-transform: uppercase;
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif;
+    padding: 11px 10px 10px 20px;
+    position: absolute;
+    margin-left: 150px;
+    top: 15px;
+    font-size:30px;
+    background-color: #fff;
+    border-bottom:10px solid #e9573f;
+}
 
+#main-new-2{
+    position: absolute;
+    top: 125px;
+    left : 365px
+
+}
+
+#img-main-new-2{
+    width: 550px;
+    height:300px;
+}
+
+#title-main-new-2{
+    width:400px;
+    top: 250px;
+    left:50px;
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif;
+    padding: 11px 10px 10px 20px;
+    position: absolute;
+    font-size:20px;
+    background-color: #fff;
+    border-bottom:10px solid #e9573f;
+}
+
+#main-new-top-right-container{
+    height:500px
+}
+
+#main-new-3{
+    position: relative;
+
+}
+
+#img-main-new-3{
+    width: 100%;
+    height:150px;
+}
+
+#title-main-new-3{
+    margin: 10px 0;
+    font-size: 17px;
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif
+}
+
+#main-new-4{
+    margin:15px 0;
+    position: relative;
+
+}
+
+#img-main-new-4{
+    width: 100%;
+    height:150px;
+}
+
+#title-main-new-4{
+    margin: 10px 0;
+    font-size: 17px;
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif
+}
+
+#art-bottom-container{
+    position: relative;
+    margin-top:50px;
+    height: 150px;
+}
+
+#img-main-new-5{
+    margin-left:440px;
+    width: 760px;
+    height:130px;
+}
+
+#title-main-new-5{
+    top:40px;
+    font-family: "futuraLT-bold",'Times New Roman', Times, serif;
+    padding: 11px 10px 10px 20px;
+    position: absolute;
+    font-size:20px;
+    background-color: #fff;
+    border-bottom:10px solid #e9573f;
+}
 
 /*  ----------------- Règles main bloc -------------------- */
 
@@ -73,7 +247,7 @@ a:hover{
 #weekly-brief{
     display: inline-block;
     font-family: 'futuraLT-bold','Times New Roman', Times, serif;
-    font-size: 0.9em;
+    font-size: 0.7em;
     width:250px;
 }
 
@@ -125,14 +299,10 @@ a:hover{
     z-index: 100;
 }
 
-
-
-
 .art-infos h3{
     margin-top: 15px;
     font-size: 1.2em
 }
-
 
 @media screen and (max-width: 992px) {
 
@@ -170,8 +340,6 @@ a:hover{
     font-size:0.8em;
     margin-top : 5px
 }
-
-
 
 /* Rules categories */
 
@@ -228,6 +396,10 @@ h5{
 }
 /* -------------------- CSS FORM ---------------------- */
 
+#form-wrap{
+    background-color: #fff;
+}
+
 .contact-title{
     font-size: 6em;
 }
@@ -276,16 +448,21 @@ label {
 }
 .noresize{
     min-width: 100%;
-    min-height: 800px;
+    min-height: 500px;
 }
 
 .pc-main-wrap{
-    padding-top: 800px;
+    padding-top: 525px;
+    margin-bottom: 25px;
 }
 
 /* ------- Left block ---------- */
 #ytVid{
     width: 100%;
+}
+
+#intro-pc-selling h1{
+    margin-top:20px;
 }
 
 .custom-gray{
@@ -308,10 +485,94 @@ label {
     color:black;
 }
 
+#cart-icon{
+    width:30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.discover-pc{
+    background-image: linear-gradient(to right, #e9573f, #2D0A57);
+    color:#FFF;
+    font-size:1.2em;
+    transition: all;
+}
+
+.discover-pc:hover{
+    background-image:linear-gradient(to right, #6E1F4E, #2D0A57)
+}
 
 /*  ----- right block --------- */
 
+.pc-config{
+    margin-bottom:25px;
+    background-color: #F7F7F7;
+    padding: 15px;
+}
 
-
+.price{
+    border:1px solid black;
+    margin-bottom:10px;
+    padding-left : 10px;
+    padding-right:10px;
+}
 
 /* ----------------------- CSS Content END ----------------------------------  */
+
+/* ----------------------  CSS footer BEGIN ---------------------------------- */
+
+#top-footer{
+    height:75px;
+    width: 100%;
+    background-color: #e9573f;
+    font-size: 0.9em;
+}
+
+#logo-numerama{
+    width: 180px;
+    height: 45px;
+}
+
+#top-footer-left{
+    margin-top: 18px;
+}
+
+#top-footer-right{
+    margin-top: 2.1em;
+    font-size: 0.9em;
+}
+
+#bottom-footer p{    
+    font-size: 0.8em;
+}
+
+#bottom-footer a{
+    color:black;
+}
+
+#bottom-footer-bis{
+    height:65px;
+    width: 100%;
+    background-color: #d34e39;
+    font-size: 1.0em;    
+}
+
+#bottom-footer-ter{
+    height:115px;
+    width: 100%;
+    background-color: #d34e39;
+    font-size: 1.0em;    
+}
+
+   
+
+
+/* media queries */
+
+@media screen and (max-width: 992px){ 
+  #top-footer{
+  height:150px;}    
+}    
+
+/* ----------------------  CSS footer END ---------------------------------- */
+

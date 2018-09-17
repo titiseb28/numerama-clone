@@ -5,58 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Numerama-clone</title>
+    <title>Numerama-clone - Accueil</title>
 </head>
 <body>
 
     <!-- TOPBAR -->
+   <div class="container-fluid red-c ">
+        <div class="row row-topbar">
+          <div class="red-c col-lg-3 col-md-1">
+            <img class="logo d-lg-none d-md-block float-none" src="img/logo-numerama-petit.png" alt="">
+            <!-- menue deroulant logo -->
+              <div class="dropdown text-right dropdown d-none d-lg-block">
+                <a href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logo"  src="img/logo-numerama.png" alt="Numerama"/><i class="fa fa-chevron-down text-white" aria-hidden="true"></i></a>
+                <div class="dropdown-menu color-menue">
+                  <div class="">
+                    <a href="#" id="facebook" class="btn btn-list-inline-item fa fa-facebook-square text-white" role="button">   </a>
+                    <a href="#" id="twitter" class="btn btn-list-inline-item fa fa-twitter-square text-white" role="button">    </a>
+                    <a href="#" id="flipboard" class="btn btn-list-inline-item  text-white  " role="button"><img  src="img/flipboard.png" alt="">    </a>
+                    <a href="#" id="youtube" class="btn btn-list-inline-item fa fa-youtube-square text-white" role="button">     </a>
+                    <a href="#" id="rss" class="btn btn-list-inline-item fa fa-rss-square text-white" role="button">    </a>
+                  </div>
+                    <a href="#" id="frandroid" class="dropdown-item text-white" ><img src="img/frandroid-logo.png" alt="">     FrAndroid</a>
+                    <a href="#" id="humanoid"  class="dropdown-item text-white"><img src="img/humanoid-logo.png" alt="">   Humanoid</a>
+                </div>
+            </div>
+          </div>
+          <!-- menue section  lg mode-->
+          <div class="col-lg-6 d-md-none d-lg-block">
+
+            <nav class="nav justify-content-center red-f row-topbar ">
+              <a href="#" class="nav-link text-white font-size">TECH</a>
+              <a href="#" class="nav-link text-white font-size">POLITIQUE</a>
+              <a href="#" class="nav-link text-white font-size">POP CULTURE</a>
+              <a href="#" class="nav-link text-white font-size">BUSINESS</a>
+              <a href="#" class="nav-link text-white font-size">SCIENCES</a>
+              <a href="#" class="nav-link text-white font-size">GUIDES</a>
+              <a href="#" class="nav-link text-white font-size">PC</a>
+            </nav>
+          </div>
+          <!-- menue section  md mode-->
+          <div class="red-f d-lg-none d-md-block col-md-10">
+            <!-- menue deroulant logo -->
+              <div class="dropdown text-left dropdown d-lg-none d-md-block">
+                <a href="#" class="text-white"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tech</a>
+                <div class="dropdown-menu bg-white  bg-opacity">
+                  <div class="dropdown-item ">
+                    <a href="#" class="nav-link text-danger font-size font-weight-bold">| TECH</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| POLITIQUE</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| POP CULTURE</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| BUSINESS</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| SCIENCES</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| GUIDES</a>
+                    <a href="#" class="nav-link text-dark font-size font-weight-bold">| PC</a>
+                    <a href="#" class="dropdown-item fa fa-search bg-dark text-white">   Recherche</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-1 ">
+            <!-- MENUE DE GAUCHE -->
+            <nav class="nav red-c ">
+              <a href="#" id="dis" class="nav-link text-white d-none d-lg-block">DISCUSSIONS</a>
+              <a href="#"><span class="fa fa-user-circle text-white col-lg-1 "></span></a>
+              <a href="#"><span class="fa fa-search text-white d-none d-lg-block"></span></a>
+            </nav>
+          </div>
+
+        </div>
+      </div>
 
     <!-- CONTENU  -->
+
     <div id="main-container" class="container-fluid no-gutters col-12">
         <div id="wrap-all" class="container-fluid col-12 ">
 
             <!-- Section hidden on phone & tablet -->
 
-            <section class="d-none d-lg-block row">
-                <div id="top-wrap">
-                    <div id="main-news-top-left-container">
+            <section class="d-none d-lg-block">
+                <div id="top-wrap" class="row">
+                    <div id="main-news-top-left-container" class="col-9 d-inline-block">
                         <article id="main-new-1">
                             <a href="#"> 
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages">
-                                <h3>Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" id="img-main-new-1">
+                                <h3 id="title-main-new-1" class="font-orange">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                             </a>
                         </article>
 
                         <article id="main-new-2">
                             <a href="#">
-                                <img src="img/youtube_rework.png" alt="Metalliquoi, Pause Process, etc. : 5 chaines Youtube à suivre en septembre 2018" />
-                                <h4>Metalliquoi, Pause Process, etc. : 5 chaines Youtube à suivre en septembre 2018</h4>
+                                <img src="img/logo-youtube.jpg" alt="Metalliquoi, Pause Process, etc. : 5 chaines Youtube à suivre en septembre 2018" id="img-main-new-2" />
+                                <h4 id="title-main-new-2">Metalliquoi, Pause Process, etc. : 5 chaines Youtube à suivre en septembre 2018</h4>
                             </a>
-
                         </article>
 
                     </div>
-                    <div id="main-news-top-right-container">
-                        <article>
+                    <div id="main-news-top-right-container" class="col-3 d-inline-block">
+                        <article id="main-new-3">
                             <a href="/pc.html">
-                                <img src="img/pc_selling.jpg" alt="Le saviez-vous ? Numerama fait aussi des PC et ils sont cool" />
-                                <h5>Le saviez-vous ? Numerama fait aussi des PC et ils sont cool</h5>
+                                <img src="img/pc_selling.jpg" alt="Le saviez-vous ? Numerama fait aussi des PC et ils sont cool" id="img-main-new-3" />
+                                <h5 id="title-main-new-3">Le saviez-vous ? Numerama fait aussi des PC et ils sont cool</h5>
                             </a>
                         </article>
-                        <article>
+                        <article id="main-new-4">
                             <a href="#">
-                                <img src="img/submarine.jpg" alt="Explorez les profondeurs de l'océan en direct avec le Nautilus Live" />
-                                <h5>Explorez les profondeurs de l'océan en direct avec le Nautilus Live</h5>
+                                <img src="img/submarine.jpg" alt="Explorez les profondeurs de l'océan en direct avec le Nautilus Live" id="img-main-new-4"/>
+                                <h5 id="title-main-new-4">Explorez les profondeurs de l'océan en direct avec le Nautilus Live</h5>
                             </a>
                         </article>
                     </div>
                 </div>
 
-                <div id="art-bottom-container"> 
+                <div id="art-bottom-container" class="row col-12"> 
                     <a href="/pc.html">
-                        <img src="img/keyboard.jpg" alt="Le saviez-vous ? Numerama fait aussi des PC et ils sont cool" />
-                        <h5>Le saviez-vous ? Numerama fait aussi des PC et ils sont cool</h5>
+                        <img src="img/top-img.jpg" alt="Le saviez-vous ? Numerama fait aussi des PC et ils sont cool" id="img-main-new-5"/>
+                        <h5 id="title-main-new-5">Le saviez-vous ? Numerama fait aussi des PC et ils sont cools</h5>
                     </a>
                 </div>
             </section>
@@ -120,7 +184,7 @@
                             </div>
                         </div>
                         <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -132,7 +196,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -144,7 +208,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -156,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -168,7 +232,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -180,7 +244,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -192,7 +256,7 @@
                                 </div>
                             </div>
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -204,7 +268,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -216,7 +280,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -228,7 +292,7 @@
                                 </div>
                             </div>
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -240,7 +304,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -252,7 +316,7 @@
                                 </div>
                             </div> 
                             <div class="last-art row col-lg-4 d-lg-inline-block">
-                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-3 d-lg-block col-lg-12">
+                                <img src="img/ants-rework.png" alt="Comment les fourmis peuvent nous apprendre à éviter les embouteillages" class="art-img d-inline-block col-4 d-lg-block col-lg-12">
                                 <div class="art-infos d-inline-block col-8 col-lg-12">
                                     <h3 class="">Comment les fourmis peuvent nous apprendre à éviter les embouteillages</h3>
                                     <div class="tag-date-container container">
@@ -277,12 +341,12 @@
                     <div class="more-art col-2 d-lg-inline-block float-right">Parcourir l'univers Tech <img class="right-icon" src="https://cdn4.iconfinder.com/data/icons/icon-flat-icon-set/50/triangle-right-512.png" alt="Icone découvrir plus d'articles Tech"/></div>
                     <div class="row justify-content-around">
                         <article class="tech-art col-2 no-gutters ">
-                            <a href="#" class="row justify-content-center">
-                                <img src="img/submarine.jpg" alt="Explorez les profondeurs de l'océan en direct avec le Nautilus Live" class="tech-art-img col-12"/>
+                            <a href="#" class="no-gutters">
+                                <img src="img/submarine.jpg" alt="Explorez les profondeurs de l'océan en direct avec le Nautilus Live" class="col-12"/>
                                 <h5>Explorez les profondeurs de l'océan en direct avec le Nautilus Live</h5>
                                 <span>il y a 14 heures</span>
                             </a>
-                        </article>  
+                        </article>
                         <article class="tech-art col-2 no-gutters ">
                             <a href="#" class="no-gutters">
                                 <img src="img/submarine.jpg" alt="Explorez les profondeurs de l'océan en direct avec le Nautilus Live" class="col-12"/>
@@ -374,6 +438,118 @@
     
     
     <!-- FOOTER -->
+
+    <footer >
+
+        <!--ligne du haut du footer -->
+        <div id="top-footer" class="container-fluid">
+          <div  class="container">
+            <div class="row justify-content-md-center">
+  
+              <!-- partie de gauche du top-footer -->
+              <div id="top-footer-left" class=" col-lg-2 pr-5 mr-2">
+                <img id="logo-numerama" style="margin-left: 0px" src="img/logo-numerama.png" alt="logo Numerama">
+              </div>
+              
+              <!-- partie de droite du top-footer --><!-- disparait en dessous de lg -->
+              <div id="top-footer-right" class="offset-0 col-9 text-right d-none d-lg-block ">
+                <a href="#" class="mr-3 text-white">TECH</a>
+                <a href="#" class="mr-3 text-white" >POLITIQUE</a>
+                <a href="#" class="mr-3 text-white">POP CULTURE</a>
+                <a href="#" class="mr-3 text-white">BUSINESS</a>
+                <a href="#" class="mr-3 text-white" >SCIENCES</a>
+                <a href="#" class="mr-3 text-white" >STARTUP</a>
+                <a href="#" class="mr-3 text-white">|</a>
+                <a href="#" class="mr-3 text-white">A PROPOS</a>
+                <a href="#" class="text-white">CONTACT</a>          
+              </div>
+  
+              <!-- nouvelle partie du top-footer--><!--apparait en dessous de lg-->          
+              <div id="top-footer-left-line2-bis" class="d-lg-none mt-5 mr-0 col-12 d-flex justify-content-center"> 
+                <i class="fa fa-facebook-f mr-3" style="font-size:24px;color:white;padding-right:12%"></i>                  
+                <i class="fa fa-twitter mr-3" style="font-size:24px;color:white;padding-right:12%" ></i>
+                <i class="fa fa-google mr-3" style="font-size:24px;color:white;padding-right:12%" ></i>
+                <i class="fa fa-youtube mr-3" style="font-size:24px;color:white;padding-right:12%" ></i>
+                <i class="fa fa-rss" style="font-size:24px;color:white"></i>                       
+              </div>           
+            </div>
+          </div>
+        </div>
+  
+        <!--*************************************************************************-->
+  
+        <!--ligne du bas du footer --><!-- disparait en dessous de lg -->
+        <div id="bottom-footer" class="container-fluid mt-4 d-none d-lg-block"> 
+          <div  class="container">  
+            <div class="row"> 
+            
+            <!-- partie de gauche du bottom-footer -->
+            <div id="bottom-footer-left" class="col-4 ml-5" >
+              <div id="bottom-footer-left-line1" class="  ">
+                <p class="text-muted  ">NOUS SUIVRE SUR LES RÉSEAUX</p> 
+              </div>
+              <div id="bottom-footer-left-line2">            
+                <i class="fa fa-facebook-f mr-3" style="font-size:24px"></i>                  
+                <i class="fa fa-twitter mr-3" style="font-size:24px"></i>
+                <i class="fa fa-google mr-3" style="font-size:24px"></i>
+                <i class="fa fa-youtube mr-3" style="font-size:24px"></i>
+                <i class="fa fa-rss" style="font-size:24px"></i>                       
+              </div>
+              <div id="bottom-footer-left-line3">
+                <p class="font-italic text-muted mt-3" >"Les travaux des hommes de génie, même poursuivis dans de fausses directions,
+                ne manquent presque jamais de se révéler, en fin de compte, nettement bénéfique
+                au genre humain."<strong class="text-danger"> &#151; Mary Shelley</strong></p>
+              </div> 
+            </div>  
+            
+            <!-- partie de droite du bottom-footer -->
+            <div id="bottom-footer-right" class=" col-7">
+              <div id="bottom-right-line1"> 
+                <h1 class="font-weight-bold text-right">Humanoid</h1>
+              </div>
+              <div id="bottom-right-line2" class="text-right mr-1">
+                <a href="#" class="text-muted mr-2"><small>Mon profil</small></a>
+                <a href="#" class="text-muted mr-2 "><small>Mentions Légales</small></a>
+                <a href="#" class="text-muted "><small>Préférences publicitaires</small></a>
+              </div>
+            </div>                     
+          </div> 
+        </div>          
+      </div> 
+        
+      <!--nouveau bottom-footer--><!-- apparait en dessous de lg -->
+      <!--nouveau bottom-footer--><!-- disparait en dessous de md -->
+      <div id="bottom-footer-bis" class="container-fluid d-lg-none pr-3  d-none d-md-block"> 
+        <div class="row" > 
+          <div id="top-footer-right-bis" class="offset-1 col-11 mt-2 " >
+            <a href="#" class="mr-3 text-white" style="font-size:1.8em;padding-right:6%">Humanoid</a>
+            <a href="#" class="mr-3 text-white " style="padding-right:6%" >PRÉFÉRENCES</a>
+            <a href="#" class="mr-3 text-white " style="padding-right:6%">À PROPOS</a>
+            <a href="#" class="mr-3 text-white" style="padding-right:6%">CONTACT</a>                 
+          </div>  
+        </div>             
+      </div>
+  
+      <!--nouveau bottom-footer--><!-- apparait en dessous de md -->
+      <div id="bottom-footer-ter" class="container-fluid d-md-none pr-3  d-none d-block  pr-3  "> 
+        <div class="row text-center" > 
+          <div  class=" col-12 mt-2 " >
+            <a href="#" class="mr-3 text-white " style="font-size:1.8em;padding-right:5%">Humanoid</a>
+            <div class="row" >
+              <div class="offset-1 col-9 mt-4 text-left"> 
+                <a href="#" class="mr-3 text-white" style="padding-right:4%">À PROPOS</a>
+                <a href="#" class="mr-3 text-white offset-1" style="padding-right:4%">CONTACT</a>                 
+              </div>  
+            </div> 
+          </div>          
+        </div> 
+      </div> 
+        
+       
+  
+  
+  
+      </footer>
 
     <!-- LINKER JS -->
 
