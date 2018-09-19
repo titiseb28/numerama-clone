@@ -27,6 +27,7 @@
   
   .logo {
     width: 50%;
+    height:55px
   
   }
   
@@ -37,7 +38,13 @@
   
   .row-topbar {
     height: 100%;
+    font-size : 1.4em;
   
+  }
+
+  .dropdown-menu{
+      margin-top:15px;
+      width:60%
   }
   
   #dis {
@@ -47,11 +54,20 @@
   .color-menue {
     background-color: #464646;
   }
+
+  #frandroid img{
+      height: 40px;
+      width: 40px;
+  }
   
   #frandroid:hover {
     background-color: green;
   }
   
+  #humanoid img {
+    height: 40px;
+    width: 40px;
+  }
   #humanoid:hover {
     background-color: blue;
   }
@@ -63,7 +79,11 @@
   #twitter:hover {
     background-color: #0894F5;
   }
-  
+
+  #flipboard img{
+      width:13px;
+      height: 13px
+  }
   #flipboard:hover {
     background-color: #E03134;
   }
@@ -75,6 +95,11 @@
   #rss:hover {
     background-color: #FF972B;
   }
+
+.fa-user-circle, .fa-search{
+    margin-top:10px;
+}
+
   /* Topbar end */
   
 
@@ -304,10 +329,10 @@ a:hover{
     font-size: 1.2em
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width:583px) and (max-width: 992px)  {
 
     .last-art{
-        margin-top:50px
+        margin-top:15px;
     }
     .art-infos h3 {
     font-size: 1.2em;
@@ -318,6 +343,26 @@ a:hover{
     }
     .art-img{
         width: 100%;
+        min-width:150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 582px) {
+
+    .last-art{
+        margin-top:10px;
+    }
+    .art-infos h3 {
+    font-size: 1em;
+    }
+    .last-art{
+        height:200px;
+        align-items: flex-start;
+    }
+    .art-img{
+        width: 100%;
+        min-width:100px;
         height: 100px;
     }
 }
@@ -371,7 +416,8 @@ h5{
     font-size:0.9em;
     background: #e2e2e2;
     margin-top:15px;
-    padding: 10px;
+    margin-bottom:15px;
+    padding: 10px 10px;
     height:40px;
 }
 .tag span {
@@ -398,6 +444,8 @@ h5{
 
 #form-wrap{
     background-color: #fff;
+    padding : 15px;
+    margin-bottom: 15px
 }
 
 .contact-title{
@@ -438,6 +486,11 @@ label {
 #infolink{
     text-decoration: none;
     color: #e9573f
+}
+
+#legal-mentions-contact{
+    margin-top:20px;
+    font-size:0.7em;
 }
 
 /* --------------------- CSS PC ----------------  */
@@ -501,6 +554,23 @@ label {
 .discover-pc:hover{
     background-image:linear-gradient(to right, #6E1F4E, #2D0A57)
 }
+
+.accordion{
+    margin-top: 25px;
+}
+
+.btn-link{
+    color:black;
+    text-decoration:none;
+    text-decoration-line: none;
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    text-decoration-line: none;
+    color:black;
+}
+
 
 /*  ----- right block --------- */
 
