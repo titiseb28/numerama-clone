@@ -43,6 +43,18 @@
     font-size: 1.0em;    
 }
 
+#urlHumanoid:hover
+{
+  color:#e9573f;
+  text-decoration:none;
+  
+}
+
+.deco-none:hover
+{
+  text-decoration:none;
+}
+
    
 
 
@@ -51,7 +63,9 @@
 @media screen and (max-width: 992px){ 
   #top-footer{
   height:150px;}    
-}    
+} 
+
+
 
 
 
