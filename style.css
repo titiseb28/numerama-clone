@@ -25,8 +25,14 @@
     background-color: #E03134;
   }
   
+  .logoSmall {
+    width: 55px;
+    height:55px
+  
+  }
+
   .logo {
-    width: 50%;
+    width: 190px;
     height:55px
   
   }
@@ -44,7 +50,6 @@
 
   .dropdown-menu{
       margin-top:15px;
-      width:60%
   }
   
   #dis {
@@ -246,8 +251,7 @@ a:hover{
 }
 
 #img-main-new-5{
-    margin-left:440px;
-    width: 760px;
+    width: 680px;
     height:130px;
 }
 
@@ -256,7 +260,7 @@ a:hover{
     font-family: "futuraLT-bold",'Times New Roman', Times, serif;
     padding: 11px 10px 10px 20px;
     position: absolute;
-    font-size:20px;
+    font-size:1.1em;
     background-color: #fff;
     border-bottom:10px solid #e9573f;
 }
@@ -591,6 +595,8 @@ label {
 
 /* ----------------------  CSS footer BEGIN ---------------------------------- */
 
+/* css footer */
+
 #top-footer{
     height:75px;
     width: 100%;
@@ -634,6 +640,18 @@ label {
     font-size: 1.0em;    
 }
 
+#urlHumanoid:hover
+{
+  color:#e9573f;
+  text-decoration:none;
+  
+}
+
+.deco-none:hover
+{
+  text-decoration:none;
+}
+
    
 
 
@@ -642,7 +660,8 @@ label {
 @media screen and (max-width: 992px){ 
   #top-footer{
   height:150px;}    
-}    
+} 
+
 
 /* ----------------------  CSS footer END ---------------------------------- */
 

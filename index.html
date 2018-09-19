@@ -16,9 +16,9 @@
 <div class="container-fluid red-c ">
 <div class="row row-topbar">
     <div class="red-c col-lg-3 col-md-1">
-    <img class="logo d-lg-none d-md-block float-none" src="img/logo-numerama-petit.png" alt="">
+    <img class="logoSmall d-lg-none d-inline-block float-none" src="img/logo-numerama-petit.png" alt="">
     <!-- menue deroulant logo -->
-        <div class="dropdown text-right dropdown d-none d-lg-block">
+        <div class="dropdown text-right d-none d-lg-block">
         <a href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="logo"  src="img/logo-numerama.png" alt="Numerama"/><i class="fa fa-chevron-down text-white" aria-hidden="true"></i></a>
         <div class="dropdown-menu color-menue">
             <div class="">
@@ -34,7 +34,7 @@
     </div>
     </div>
     <!-- menue section  lg mode-->
-    <div class="col-lg-6 d-md-none d-lg-block">
+    <div class="col-lg-6 d-none d-md-none d-lg-block">
         <nav class="nav justify-content-center red-f row-topbar ">
             <a href="#" class="nav-link text-white font-size">TECH</a>
             <a href="#" class="nav-link text-white font-size">POLITIQUE</a>
@@ -46,9 +46,9 @@
         </nav>
     </div>
     <!-- menue section  md mode-->
-    <div class="red-f d-lg-none d-md-block col-md-10">
+    <div class="red-f d-lg-none d-md-block  col-9">
     <!-- menue deroulant logo -->
-        <div class="dropdown text-left dropdown d-lg-none d-md-block">
+        <div class="dropdown text-left d-lg-none d-md-inline-block">
         <a href="#" class="text-white"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tech</a>
         <div class="dropdown-menu bg-white  bg-opacity">
             <div class="dropdown-item ">
@@ -64,7 +64,7 @@
         </div>
     </div>
     </div>
-    <div class="col-lg-3 col-md-1 ">
+    <div class="col-lg-3 col-1">
     <!-- MENUE DE DROITE -->
     <nav class=" nav red-c ">
         <a href="#" id="dis" class="nav-link text-white d-none d-lg-block">DISCUSSIONS</a>
@@ -122,9 +122,9 @@
                     </div>
                 </div>
 
-                <div id="art-bottom-container" class="row col-12"> 
+                <div id="art-bottom-container" class="row container justify-content-center"> 
                     <a href="/pc.html">
-                        <img src="img/top-img.jpg" alt="Le saviez-vous ? Numerama fait aussi des PC et ils sont cool" id="img-main-new-5"/>
+                        <img src="img/top-img.jpg" alt="Le saviez-vous ? Numerama fait aussi des PC et ils sont cool" id="img-main-new-5" class="offset-3"/>
                         <h5 id="title-main-new-5">Le saviez-vous ? Numerama fait aussi des PC et ils sont cools</h5>
                     </a>
                 </div>
@@ -445,13 +445,13 @@
     <footer >
 
         <!--ligne du haut du footer -->
-        <div id="top-footer" class="container-fluid">
+        <div id="top-footer" class="container-fluid justify-content-center">
           <div  class="container">
             <div class="row justify-content-md-center">
   
               <!-- partie de gauche du top-footer -->
-              <div id="top-footer-left" class=" col-lg-2 pr-5 mr-2">
-                <img id="logo-numerama" style="margin-left: 0px" src="img/logo-numerama.png" alt="logo Numerama">
+              <div id="top-footer-left" class=" col-lg-2 pr-5 mr-2 ">
+                <a href="index.html"><img id="logo-numerama" src="img/logo-numerama.png" alt= "Logo Numerama"></a>
               </div>
               
               <!-- partie de droite du top-footer --><!-- disparait en dessous de lg -->
@@ -464,16 +464,21 @@
                 <a href="#" class="mr-3 text-white" >STARTUP</a>
                 <a href="#" class="mr-3 text-white">|</a>
                 <a href="#" class="mr-3 text-white">A PROPOS</a>
-                <a href="#" class="text-white">CONTACT</a>          
-              </div>
+                <a href="contact.html" title="Contact" class="text-white deco-none">CONTACT</a>          
+              </div>          
   
               <!-- nouvelle partie du top-footer--><!--apparait en dessous de lg-->          
-              <div id="top-footer-left-line2-bis" class="d-lg-none mt-5 mr-0 col-12 d-flex justify-content-center"> 
-                <i class="fa fa-facebook-f mr-3" style="font-size:24px;color:white;padding-right:12%"></i>                  
-                <i class="fa fa-twitter mr-3" style="font-size:24px;color:white;padding-right:12%" ></i>
-                <i class="fa fa-google mr-3" style="font-size:24px;color:white;padding-right:12%" ></i>
-                <i class="fa fa-youtube mr-3" style="font-size:24px;color:white;padding-right:12%" ></i>
-                <i class="fa fa-rss" style="font-size:24px;color:white"></i>                       
+              <div  id="top-footer-left-line2-bis" class="d-lg-none mt-5 mr-0 col-12 d-flex justify-content-between"> 
+                <a href="https://www.facebook.com/Numerama" target="_blank" title="https://www.facebook.com/Numerama">
+                  <i class="fa fa-facebook" style="font-size:24px;color:white"></i></a>
+                <a href="https://twitter.com/numerama" target="_blank" title="https://twitter.com/numerama">
+                  <i class="fa fa-twitter" style="font-size:24px;color:white"></i></a>
+                <a href="https://plus.google.com/+numerama" target="_blank" title="https://plus.google.com/+numerama">
+                  <i class="fa fa-google" style="font-size:24px;color:white"></i></a>
+                <a href="https://www.youtube.com/c/numerama" target="_blank" title="https://www.youtube.com/c/numerama">
+                  <i class="fa fa-youtube" style="font-size:24px;color:white"></i></a>
+                <a href="https://www.numerama.com/feed/" target="_blank" title="https://www.numerama.com/feed/">
+                  <i class="fa fa-rss" style="font-size:24px;color:white"></i></a>                                   
               </div>           
             </div>
           </div>
@@ -491,12 +496,18 @@
               <div id="bottom-footer-left-line1" class="  ">
                 <p class="text-muted  ">NOUS SUIVRE SUR LES RÉSEAUX</p> 
               </div>
-              <div id="bottom-footer-left-line2">            
-                <i class="fa fa-facebook-f mr-3" style="font-size:24px"></i>                  
-                <i class="fa fa-twitter mr-3" style="font-size:24px"></i>
-                <i class="fa fa-google mr-3" style="font-size:24px"></i>
-                <i class="fa fa-youtube mr-3" style="font-size:24px"></i>
-                <i class="fa fa-rss" style="font-size:24px"></i>                       
+              <div id="bottom-footer-left-line2"> 
+                <a href="https://www.facebook.com/Numerama" target="_blank" title="https://www.facebook.com/Numerama">
+                  <i class="fa fa-facebook mr-3" style="font-size:24px"></i></a>
+                <a href="https://twitter.com/numerama" target="_blank" title="https://twitter.com/numerama">
+                  <i class="fa fa-twitter mr-3" style="font-size:24px"></i></a>
+                <a href="https://plus.google.com/+numerama" target="_blank" title="https://plus.google.com/+numerama">
+                  <i class="fa fa-google mr-3" style="font-size:24px"></i></a> 
+                <a href="https://www.youtube.com/c/numerama" target="_blank" title="https://www.youtube.com/c/numerama">
+                  <i class="fa fa-youtube mr-3" style="font-size:24px"></i></a>
+                <a href="https://www.numerama.com/feed/" target="_blank" title="https://www.numerama.com/feed/">
+                  <i class="fa fa-rss" style="font-size:24px"></i></a>               
+                                  
               </div>
               <div id="bottom-footer-left-line3">
                 <p class="font-italic text-muted mt-3" >"Les travaux des hommes de génie, même poursuivis dans de fausses directions,
@@ -508,7 +519,8 @@
             <!-- partie de droite du bottom-footer -->
             <div id="bottom-footer-right" class=" col-7">
               <div id="bottom-right-line1"> 
-                <h1 class="font-weight-bold text-right">Humanoid</h1>
+                <h1 class="font-weight-bold text-right"><a id="urlHumanoid" href="https://humanoid.fr/" target="_blank" title="https://humanoid.fr/">Humanoid</a></h1>
+                 
               </div>
               <div id="bottom-right-line2" class="text-right mr-1">
                 <a href="#" class="text-muted mr-2"><small>Mon profil</small></a>
@@ -525,10 +537,11 @@
       <div id="bottom-footer-bis" class="container-fluid d-lg-none pr-3  d-none d-md-block"> 
         <div class="row" > 
           <div id="top-footer-right-bis" class="offset-1 col-11 mt-2 " >
-            <a href="#" class="mr-3 text-white" style="font-size:1.8em;padding-right:6%">Humanoid</a>
+            <a href="https://humanoid.fr/" target="_blank" title="https://humanoid.fr/" class="mr-3 text-white deco-none" 
+              style="font-size:1.8em;padding-right:6%">Humanoid</a>
             <a href="#" class="mr-3 text-white " style="padding-right:6%" >PRÉFÉRENCES</a>
             <a href="#" class="mr-3 text-white " style="padding-right:6%">À PROPOS</a>
-            <a href="#" class="mr-3 text-white" style="padding-right:6%">CONTACT</a>                 
+            <a href="contact.html" title="Contact" class="mr-3 text-white deco-none" style="padding-right:6%">CONTACT</a> 
           </div>  
         </div>             
       </div>
@@ -537,11 +550,11 @@
       <div id="bottom-footer-ter" class="container-fluid d-md-none pr-3  d-none d-block  pr-3  "> 
         <div class="row text-center" > 
           <div  class=" col-12 mt-2 " >
-            <a href="#" class="mr-3 text-white " style="font-size:1.8em;padding-right:5%">Humanoid</a>
+            <a href="https://humanoid.fr/" target="_blank" class="mr-3 text-white deco-none " style="font-size:1.8em;padding-right:5%">Humanoid</a>
             <div class="row" >
               <div class="offset-1 col-9 mt-4 text-left"> 
                 <a href="#" class="mr-3 text-white" style="padding-right:4%">À PROPOS</a>
-                <a href="#" class="mr-3 text-white offset-1" style="padding-right:4%">CONTACT</a>                 
+                <a href="#" class="mr-3 text-white offset-1 deco-none" style="padding-right:4%">CONTACT</a>                 
               </div>  
             </div> 
           </div>          
@@ -553,7 +566,6 @@
   
   
       </footer>
-
     <!-- LINKER JS -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
