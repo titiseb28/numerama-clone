@@ -377,6 +377,7 @@ a:hover{
     background-color: #EEEEEE;
     color: #FFF;
     transition: all;
+    transition-duration: 0.5s;
 }
 
 .tag-last-art:hover{
@@ -412,6 +413,10 @@ a:hover{
     background-color: #FFF;
 }
 
+.art-categories-container{
+    margin-top:25px;
+}
+
 h5{
     font-size: 1.1em;
 }
@@ -419,18 +424,18 @@ h5{
     font-family: "futuraLT-bold", 'Times New Roman', Times, serif;
     font-size:0.9em;
     background: #e2e2e2;
-    margin-top:15px;
-    margin-bottom:15px;
-    padding: 10px 10px;
+    margin: 15px;
+    padding: 10px;
     height:40px;
 }
 .tag span {
-    margin-left:50px;
     background-color: #afafaf;
+    margin: 0 2%;
     border-radius: 3px;
     padding: 0px 25px;
     color: #FFF;
     transition-property: "background-color";
+    transition-duration: 0.5s;
 }
 
 .tag span:hover{
@@ -440,6 +445,8 @@ h5{
 .pol-art{
     display: inline-block;
 }
+
+
 
 .title-container{
     padding-top:50px;
