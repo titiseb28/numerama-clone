@@ -371,6 +371,17 @@ a:hover{
     }
 }
 
+@media screen and (max-width: 450px) {
+
+    .art-infos{
+        font-size:0.9em;
+    }
+    .tag-last-art{
+        display:none;
+    }
+}
+
+
 .tag-last-art{
     font-family: "futuraLT-bold", 'Times New Roman', Times, serif;
     font-size:0.9em;
